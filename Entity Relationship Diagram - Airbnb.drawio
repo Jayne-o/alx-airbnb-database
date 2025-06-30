@@ -1,0 +1,309 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.9 Chrome/134.0.6998.205 Electron/35.4.0 Safari/537.36" version="27.0.9">
+  <diagram name="Page-1" id="D5-uWfxtyNu4bbI-U0gH">
+    <mxGraphModel dx="1426" dy="841" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="YGtBS_D9W09FXs97Ufix-1" value="" style="edgeStyle=entityRelationEdgeStyle;endArrow=ERzeroToMany;startArrow=ERone;endFill=1;startFill=0;rounded=0;" edge="1" parent="1" source="YGtBS_D9W09FXs97Ufix-24" target="YGtBS_D9W09FXs97Ufix-7">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="560" y="660" as="sourcePoint" />
+            <mxPoint x="660" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-3" value="Property" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="40" width="340" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-33" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" vertex="1" parent="YGtBS_D9W09FXs97Ufix-3">
+          <mxGeometry y="30" width="340" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-34" value="PK" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;" vertex="1" parent="YGtBS_D9W09FXs97Ufix-33">
+          <mxGeometry width="30" height="30" as="geometry">
+            <mxRectangle width="30" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-35" value="&#xa; property_id:&#xa;     Primary Key, UUID, Indexed&#xa;" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;" vertex="1" parent="YGtBS_D9W09FXs97Ufix-33">
+          <mxGeometry x="30" width="310" height="30" as="geometry">
+            <mxRectangle width="310" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-4" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" vertex="1" parent="YGtBS_D9W09FXs97Ufix-3">
+          <mxGeometry y="60" width="340" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-5" value="FK" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;" vertex="1" parent="YGtBS_D9W09FXs97Ufix-4">
+          <mxGeometry width="30" height="30" as="geometry">
+            <mxRectangle width="30" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-6" value="&#xa; host_id:&#xa;     Foreign Key, references User(user_id)&#xa;" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;" vertex="1" parent="YGtBS_D9W09FXs97Ufix-4">
+          <mxGeometry x="30" width="310" height="30" as="geometry">
+            <mxRectangle width="310" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-7" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" vertex="1" parent="YGtBS_D9W09FXs97Ufix-3">
+          <mxGeometry y="90" width="340" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-8" value="" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;" vertex="1" parent="YGtBS_D9W09FXs97Ufix-7">
+          <mxGeometry width="30" height="260" as="geometry">
+            <mxRectangle width="30" height="260" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-9" value="&#xa; name:&#xa;     VARCHAR, NOT NULL&#xa;&#xa; description:&#xa;     TEXT, NOT NULL&#xa;&#xa; location:&#xa;     VARCHAR, NOT NULL&#xa;&#xa; pricepernight:&#xa;     DECIMAL, NOT NULL&#xa;&#xa; created_at:&#xa;     TIMESTAMP, DEFAULT CURRENT_TIMESTAMP&#xa;&#xa; updated_at:&#xa;     TIMESTAMP, ON UPDATE CURRENT_TIMESTAMP&#xa;" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" vertex="1" parent="YGtBS_D9W09FXs97Ufix-7">
+          <mxGeometry x="30" width="310" height="260" as="geometry">
+            <mxRectangle width="310" height="260" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-13" value="Booking" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" vertex="1" parent="1">
+          <mxGeometry x="990" y="50" width="350" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-36" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" vertex="1" parent="YGtBS_D9W09FXs97Ufix-13">
+          <mxGeometry y="30" width="350" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-37" value="PK" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;" vertex="1" parent="YGtBS_D9W09FXs97Ufix-36">
+          <mxGeometry width="30" height="50" as="geometry">
+            <mxRectangle width="30" height="50" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-38" value="&#xa; booking_id:&#xa;     Primary Key, UUID, Indexed&#xa;" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;" vertex="1" parent="YGtBS_D9W09FXs97Ufix-36">
+          <mxGeometry x="30" width="320" height="50" as="geometry">
+            <mxRectangle width="320" height="50" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-39" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" vertex="1" parent="YGtBS_D9W09FXs97Ufix-13">
+          <mxGeometry y="80" width="350" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-40" value="FK1" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;" vertex="1" parent="YGtBS_D9W09FXs97Ufix-39">
+          <mxGeometry width="30" height="50" as="geometry">
+            <mxRectangle width="30" height="50" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-41" value="&#xa; property_id:&#xa;     Foreign Key, references Property(property_id)&#xa;" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;" vertex="1" parent="YGtBS_D9W09FXs97Ufix-39">
+          <mxGeometry x="30" width="320" height="50" as="geometry">
+            <mxRectangle width="320" height="50" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-14" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" vertex="1" parent="YGtBS_D9W09FXs97Ufix-13">
+          <mxGeometry y="130" width="350" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-15" value="FK2" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;" vertex="1" parent="YGtBS_D9W09FXs97Ufix-14">
+          <mxGeometry width="30" height="50" as="geometry">
+            <mxRectangle width="30" height="50" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-16" value="&#xa; user_id:&#xa;     Foreign Key, references User(user_id)&#xa;" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;" vertex="1" parent="YGtBS_D9W09FXs97Ufix-14">
+          <mxGeometry x="30" width="320" height="50" as="geometry">
+            <mxRectangle width="320" height="50" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-17" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" vertex="1" parent="YGtBS_D9W09FXs97Ufix-13">
+          <mxGeometry y="180" width="350" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-18" value="" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;" vertex="1" parent="YGtBS_D9W09FXs97Ufix-17">
+          <mxGeometry width="30" height="220" as="geometry">
+            <mxRectangle width="30" height="220" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-19" value="&#xa; start_date:&#xa;     DATE, NOT NULL&#xa;&#xa; end_date:&#xa;     DATE, NOT NULL&#xa;&#xa; total_price:&#xa;     DECIMAL, NOT NULL&#xa;&#xa; status:&#xa;     ENUM (pending, confirmed, canceled), NOT NULL&#xa;&#xa; created_at:&#xa;     TIMESTAMP, DEFAULT CURRENT_TIMESTAMP&#xa;" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" vertex="1" parent="YGtBS_D9W09FXs97Ufix-17">
+          <mxGeometry x="30" width="320" height="220" as="geometry">
+            <mxRectangle width="320" height="220" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-23" value="User" style="shape=table;startSize=20;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="30" width="330" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-30" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" vertex="1" parent="YGtBS_D9W09FXs97Ufix-23">
+          <mxGeometry y="20" width="330" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-31" value="PK" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;" vertex="1" parent="YGtBS_D9W09FXs97Ufix-30">
+          <mxGeometry width="30" height="40" as="geometry">
+            <mxRectangle width="30" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-32" value="&#xa; user_id:&#xa;     Primary Key, UUID, Indexed&#xa;" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;" vertex="1" parent="YGtBS_D9W09FXs97Ufix-30">
+          <mxGeometry x="30" width="300" height="40" as="geometry">
+            <mxRectangle width="300" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-27" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" vertex="1" parent="YGtBS_D9W09FXs97Ufix-23">
+          <mxGeometry y="60" width="330" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-28" value="" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;" vertex="1" parent="YGtBS_D9W09FXs97Ufix-27">
+          <mxGeometry width="30" height="340" as="geometry">
+            <mxRectangle width="30" height="340" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-29" value="&#xa; first_name:&#xa;     VARCHAR, NOT NULL&#xa;&#xa; last_name:&#xa;     VARCHAR, NOT NULL&#xa;&#xa; email:&#xa;     VARCHAR, UNIQUE, NOT NULL&#xa;&#xa; password_hash:&#xa;     VARCHAR, NOT NULL&#xa;&#xa; phone_number:&#xa;     VARCHAR, NULL&#xa;&#xa; role:&#xa;     ENUM (guest, host, admin), NOT NULL&#xa;&#xa; created_at:&#xa;     TIMESTAMP, DEFAULT CURRENT_TIMESTAMP&#xa;" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" vertex="1" parent="YGtBS_D9W09FXs97Ufix-27">
+          <mxGeometry x="30" width="300" height="340" as="geometry">
+            <mxRectangle width="300" height="340" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-42" value="Payment" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" vertex="1" parent="1">
+          <mxGeometry x="1270" y="730" width="350" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-43" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" vertex="1" parent="YGtBS_D9W09FXs97Ufix-42">
+          <mxGeometry y="30" width="350" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-44" value="PK" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;" vertex="1" parent="YGtBS_D9W09FXs97Ufix-43">
+          <mxGeometry width="30" height="50" as="geometry">
+            <mxRectangle width="30" height="50" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-45" value="&#xa;Payment_id:&#xa;     Primary Key, UUID, Indexed&#xa;" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;" vertex="1" parent="YGtBS_D9W09FXs97Ufix-43">
+          <mxGeometry x="30" width="320" height="50" as="geometry">
+            <mxRectangle width="320" height="50" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-46" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" vertex="1" parent="YGtBS_D9W09FXs97Ufix-42">
+          <mxGeometry y="80" width="350" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-47" value="FK" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;" vertex="1" parent="YGtBS_D9W09FXs97Ufix-46">
+          <mxGeometry width="30" height="50" as="geometry">
+            <mxRectangle width="30" height="50" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-48" value="&#xa; booking_id:&#xa;     Foreign Key, references Booking(booking_id)&#xa;" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;" vertex="1" parent="YGtBS_D9W09FXs97Ufix-46">
+          <mxGeometry x="30" width="320" height="50" as="geometry">
+            <mxRectangle width="320" height="50" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-52" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" vertex="1" parent="YGtBS_D9W09FXs97Ufix-42">
+          <mxGeometry y="130" width="350" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-53" value="" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;" vertex="1" parent="YGtBS_D9W09FXs97Ufix-52">
+          <mxGeometry width="30" height="140" as="geometry">
+            <mxRectangle width="30" height="140" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-54" value="amount:&#xa;     DECIMAL, NOT NULL&#xa;&#xa; payment_date:&#xa;     TIMESTAMP, DEFAULT CURRENT_TIMESTAMP&#xa;&#xa; payment_method:&#xa;     ENUM (credit_card, paypal, stripe), NOT NULL&#xa;" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" vertex="1" parent="YGtBS_D9W09FXs97Ufix-52">
+          <mxGeometry x="30" width="320" height="140" as="geometry">
+            <mxRectangle width="320" height="140" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-55" value="Review" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="680" width="350" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-56" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" vertex="1" parent="YGtBS_D9W09FXs97Ufix-55">
+          <mxGeometry y="30" width="350" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-57" value="PK" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;" vertex="1" parent="YGtBS_D9W09FXs97Ufix-56">
+          <mxGeometry width="30" height="50" as="geometry">
+            <mxRectangle width="30" height="50" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-58" value="&#xa; review_id:&#xa;     Primary Key, UUID, Indexed&#xa;" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;" vertex="1" parent="YGtBS_D9W09FXs97Ufix-56">
+          <mxGeometry x="30" width="320" height="50" as="geometry">
+            <mxRectangle width="320" height="50" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-59" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" vertex="1" parent="YGtBS_D9W09FXs97Ufix-55">
+          <mxGeometry y="80" width="350" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-60" value="FK1" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;" vertex="1" parent="YGtBS_D9W09FXs97Ufix-59">
+          <mxGeometry width="30" height="50" as="geometry">
+            <mxRectangle width="30" height="50" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-61" value="&#xa; property_id:&#xa;     Foreign Key, references Property(property_id)&#xa;" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;" vertex="1" parent="YGtBS_D9W09FXs97Ufix-59">
+          <mxGeometry x="30" width="320" height="50" as="geometry">
+            <mxRectangle width="320" height="50" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-62" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" vertex="1" parent="YGtBS_D9W09FXs97Ufix-55">
+          <mxGeometry y="130" width="350" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-63" value="FK2" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;" vertex="1" parent="YGtBS_D9W09FXs97Ufix-62">
+          <mxGeometry width="30" height="50" as="geometry">
+            <mxRectangle width="30" height="50" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-64" value="&#xa; user_id:&#xa;     Foreign Key, references User(user_id)&#xa;" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;" vertex="1" parent="YGtBS_D9W09FXs97Ufix-62">
+          <mxGeometry x="30" width="320" height="50" as="geometry">
+            <mxRectangle width="320" height="50" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-65" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" vertex="1" parent="YGtBS_D9W09FXs97Ufix-55">
+          <mxGeometry y="180" width="350" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-66" value="" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;" vertex="1" parent="YGtBS_D9W09FXs97Ufix-65">
+          <mxGeometry width="30" height="160" as="geometry">
+            <mxRectangle width="30" height="160" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-67" value="&#xa; rating:&#xa;     INTEGER, CHECK: rating &gt;= 1 AND rating &lt;= 5, NOT NULL&#xa;&#xa; comment:&#xa;     TEXT, NOT NULL&#xa;&#xa; created_at:&#xa;     TIMESTAMP, DEFAULT CURRENT_TIMESTAMP&#xa;" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" vertex="1" parent="YGtBS_D9W09FXs97Ufix-65">
+          <mxGeometry x="30" width="320" height="160" as="geometry">
+            <mxRectangle width="320" height="160" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-71" value="Message" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="520" width="350" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-72" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" vertex="1" parent="YGtBS_D9W09FXs97Ufix-71">
+          <mxGeometry y="30" width="350" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-73" value="PK" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;" vertex="1" parent="YGtBS_D9W09FXs97Ufix-72">
+          <mxGeometry width="30" height="50" as="geometry">
+            <mxRectangle width="30" height="50" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-74" value="&#xa; message_id:&#xa;     Primary Key, UUID, Indexed&#xa;" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;" vertex="1" parent="YGtBS_D9W09FXs97Ufix-72">
+          <mxGeometry x="30" width="320" height="50" as="geometry">
+            <mxRectangle width="320" height="50" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-75" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" vertex="1" parent="YGtBS_D9W09FXs97Ufix-71">
+          <mxGeometry y="80" width="350" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-76" value="FK1" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;" vertex="1" parent="YGtBS_D9W09FXs97Ufix-75">
+          <mxGeometry width="30" height="50" as="geometry">
+            <mxRectangle width="30" height="50" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-77" value="&#xa; sender_id:&#xa;     Foreign Key, references User(user_id)&#xa;" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;" vertex="1" parent="YGtBS_D9W09FXs97Ufix-75">
+          <mxGeometry x="30" width="320" height="50" as="geometry">
+            <mxRectangle width="320" height="50" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-78" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" vertex="1" parent="YGtBS_D9W09FXs97Ufix-71">
+          <mxGeometry y="130" width="350" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-79" value="FK2" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;" vertex="1" parent="YGtBS_D9W09FXs97Ufix-78">
+          <mxGeometry width="30" height="50" as="geometry">
+            <mxRectangle width="30" height="50" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-80" value="&#xa; recipient_id:&#xa;     Foreign Key, references User(user_id)&#xa;" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;" vertex="1" parent="YGtBS_D9W09FXs97Ufix-78">
+          <mxGeometry x="30" width="320" height="50" as="geometry">
+            <mxRectangle width="320" height="50" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-81" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" vertex="1" parent="YGtBS_D9W09FXs97Ufix-71">
+          <mxGeometry y="180" width="350" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-82" value="" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;" vertex="1" parent="YGtBS_D9W09FXs97Ufix-81">
+          <mxGeometry width="30" height="110" as="geometry">
+            <mxRectangle width="30" height="110" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-83" value="&#xa; message_body:&#xa;     TEXT, NOT NULL&#xa;&#xa; sent_at:&#xa;     TIMESTAMP, DEFAULT CURRENT_TIMESTAMP&#xa;" style="shape=partialRectangle;overflow=hidden;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;" vertex="1" parent="YGtBS_D9W09FXs97Ufix-81">
+          <mxGeometry x="30" width="320" height="110" as="geometry">
+            <mxRectangle width="320" height="110" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-102" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.023;entryY=0.54;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="YGtBS_D9W09FXs97Ufix-43" target="YGtBS_D9W09FXs97Ufix-62">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-103" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.023;entryY=0.64;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="YGtBS_D9W09FXs97Ufix-56" target="YGtBS_D9W09FXs97Ufix-78">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-107" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="YGtBS_D9W09FXs97Ufix-33" target="YGtBS_D9W09FXs97Ufix-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-108" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.014;entryY=0.68;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="YGtBS_D9W09FXs97Ufix-36" target="YGtBS_D9W09FXs97Ufix-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YGtBS_D9W09FXs97Ufix-109" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="YGtBS_D9W09FXs97Ufix-30" target="YGtBS_D9W09FXs97Ufix-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
