@@ -46,6 +46,8 @@ Entities and Attributes:
 •	recipient_id (FK → User.user_id)
 •	message_body
 •	sent_at
+
+
  Relationships:
 •	User ↔ Property: 1 (User:host) → N (Property) (One host can have many properties)
 •	User ↔ Booking: 1 (User:guest) → N (Booking) (One user can book multiple properties)
