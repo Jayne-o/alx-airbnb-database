@@ -1,6 +1,8 @@
-📦 Database Requirements – ALX AirBnB Clone
-🎯 Objective
-Design and implement a relational database that models the core functionality of an AirBnB-like booking platform, including users, properties, bookings, payments, reviews, and messages.
+📦 Database Specification – ALX AirBnB Project
+
+🎯 Goal
+Develop a structured relational database that captures the essential features of an Airbnb-style platform. The design includes support for users, property listings, booking management, payment processing, user reviews, and messaging between users.
+
 
 📚 Entities and Attributes
 User
