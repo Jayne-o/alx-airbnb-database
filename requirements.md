@@ -1,58 +1,76 @@
+📦 Database Requirements – ALX AirBnB Clone
+🎯 Objective
+Design and implement a relational database that models the core functionality of an AirBnB-like booking platform, including users, properties, bookings, payments, reviews, and messages.
 
-Entities and Attributes: 
-1. User
-•	user_id (PK)
-•	first_name
-•	last_name
-•	email (Unique)
-•	password_hash
-•	phone_number (nullable)
-•	role (ENUM: guest, host, admin)
-•	created_at
-2. Property
-•	property_id (PK)
-•	host_id (FK → User.user_id)
-•	name
-•	description
-•	location
-•	pricepernight
-•	created_at
-•	updated_at
-3. Booking
-•	booking_id (PK)
-•	property_id (FK → Property.property_id)
-•	user_id (FK → User.user_id)
-•	start_date
-•	end_date
-•	total_price
-•	status (ENUM: pending, confirmed, canceled)
-•	created_at
-4. Payment
-•	payment_id (PK)
-•	booking_id (FK → Booking.booking_id)
-•	amount
-•	payment_date
-•	payment_method (ENUM: credit_card, paypal, stripe)
-5. Review
-•	review_id (PK)
-•	property_id (FK → Property.property_id)
-•	user_id (FK → User.user_id)
-•	rating (INTEGER 1–5)
-•	comment
-•	created_at
-6. Message
-•	message_id (PK)
-•	sender_id (FK → User.user_id)
-•	recipient_id (FK → User.user_id)
-•	message_body
-•	sent_at
+📚 Entities and Attributes
+User
+- user_id: UUID, Primary Key, Indexed
+- first_name: VARCHAR, NOT NULL
+- last_name: VARCHAR, NOT NULL
+- email: VARCHAR, UNIQUE, NOT NULL
+- password_hash: VARCHAR, NOT NULL
+- phone_number: VARCHAR, NULL
+- role: ENUM('guest', 'host', 'admin'), NOT NULL
+- created_at: TIMESTAMP, DEFAULT CURRENT_TIMESTAMP
+Property
+- property_id: UUID, Primary Key, Indexed
+- host_id: UUID, Foreign Key → User(user_id)
+- name: VARCHAR, NOT NULL
+- description: TEXT, NOT NULL
+- location: VARCHAR, NOT NULL
+- pricepernight: DECIMAL, NOT NULL
+- created_at: TIMESTAMP, DEFAULT CURRENT_TIMESTAMP
+- updated_at: TIMESTAMP, ON UPDATE CURRENT_TIMESTAMP
+Booking
+- booking_id: UUID, Primary Key, Indexed
+- property_id: UUID, Foreign Key → Property(property_id)
+- user_id: UUID, Foreign Key → User(user_id)
+- start_date: DATE, NOT NULL
+- end_date: DATE, NOT NULL
+- total_price: DECIMAL, NOT NULL
+- status: ENUM('pending', 'confirmed', 'canceled'), NOT NULL
+- created_at: TIMESTAMP, DEFAULT CURRENT_TIMESTAMP
+Payment
+- payment_id: UUID, Primary Key, Indexed
+- booking_id: UUID, Foreign Key → Booking(booking_id)
+- amount: DECIMAL, NOT NULL
+- payment_date: TIMESTAMP, DEFAULT CURRENT_TIMESTAMP
+- payment_method: ENUM('credit_card', 'paypal', 'stripe'), NOT NULL
+Review
+- review_id: UUID, Primary Key, Indexed
+- property_id: UUID, Foreign Key → Property(property_id)
+- user_id: UUID, Foreign Key → User(user_id)
+- rating: INTEGER, CHECK (rating BETWEEN 1 AND 5), NOT NULL
+- comment: TEXT, NOT NULL
+- created_at: TIMESTAMP, DEFAULT CURRENT_TIMESTAMP
+Message
+- message_id: UUID, Primary Key, Indexed
+- sender_id: UUID, Foreign Key → User(user_id)
+- recipient_id: UUID, Foreign Key → User(user_id)
+- message_body: TEXT, NOT NULL
+- sent_at: TIMESTAMP, DEFAULT CURRENT_TIMESTAMP
 
+🔐 Constraints & Indexing
+- User
+- Email must be unique.
+- Required fields must not be NULL.
+- Property
+- host_id must reference a valid user.
+- Key attributes must not be NULL.
+- Booking
+- Must reference a valid user and property.
+- status is constrained to accepted values.
+- Payment
+- Must be tied to an existing booking.
+- Review
+- Must reference a valid property and user.
+- rating must be between 1 and 5.
+- Message
+- Sender and recipient must be existing users.
+- Indexing
+- Primary keys are indexed by default.
+- Additional indexes:
+- email in User table
+- property_id in Property and Booking
+- booking_id in Booking and Payment
 
- Relationships:
-•	User ↔ Property: 1 (User:host) → N (Property) (One host can have many properties)
-•	User ↔ Booking: 1 (User:guest) → N (Booking) (One user can book multiple properties)
-•	Property ↔ Booking: 1 Property → N Booking (One property can be booked many times)
-•	Booking ↔ Payment: 1 Booking → 1 Payment (Each booking has one payment)
-•	User ↔ Review: 1 User → N Review (Users can leave multiple reviews)
-•	Property ↔ Review: 1 Property → N Review (A property can have many reviews)
-•	User ↔ Message (self-join): 1 User → N Sent Messages 1 User → N Received Messages (Users can message each other)
