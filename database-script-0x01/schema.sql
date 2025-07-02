@@ -1,16 +1,11 @@
 -- USER TABLE
-CREATE TABLE users (
-    user_id UUID PRIMARY KEY,
-    first_name VARCHAR NOT NULL,
-    last_name VARCHAR NOT NULL,
-    email VARCHAR UNIQUE NOT NULL,
-    password_hash VARCHAR NOT NULL,
-    phone_number VARCHAR,
-    role VARCHAR CHECK (role IN ('guest', 'host', 'admin')) NOT NULL,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
+CREATE TYPE user_role AS ENUM ('guest', 'host', 'admin')
 
-CREATE INDEX idx_users_email ON users(email);
+    Create table users (user_id UUID Primary Key default gen_random_uuid(), 
+    first_name VARCHAR(50) NOT NULL, last_name VARCHAR(50) NOT NULL, 
+    email VARCHAR(255) UNIQUE NOT NULL, 
+    password_hash VARCHAR(255) NOT NULL, phone_number VARCHAR(255) NULL, 
+    role user_role NOT NULL, created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP);
 
 -- PROPERTY TABLE
 CREATE TABLE properties (
