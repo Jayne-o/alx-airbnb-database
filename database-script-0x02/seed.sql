@@ -16,7 +16,6 @@ INSERT INTO booking (booking_id, property_id, user_id, start_date, end_date, tot
   (gen_random_uuid(), 'uuid-property-003', 'uuid-user-003', '2025-10-20', '2025-10-22', 300.00, 'canceled', DEFAULT);
 
 -- Insert sample payments
-INSERT INTO Payment (payment_id, booking_id, amount, payment_method)
-VALUES 
-  ('pay-001', 'book-001', 240.00, 'credit_card'),
-  ('pay-002', 'book-002', 450.00, 'paypal');
+INSERT INTO payment (payment_id, booking_id, amount, payment_date, payment_method) 
+VALUES (gen_random_uuid(), 'uuid-booking-001', 480.00, DEFAULT, 'credit_card'), (gen_random_uuid(), 'uuid-booking-002', 750.00, DEFAULT, 'paypal'), 
+(gen_random_uuid(), 'uuid-booking-003', 300.00, DEFAULT, 'stripe');
