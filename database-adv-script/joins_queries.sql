@@ -13,7 +13,8 @@ SELECT
     R.rating,
     R.comment
 FROM Properties P
-LEFT JOIN Reviews R ON P.property_id = R.property_id;
+LEFT JOIN Reviews R ON P.property_id = R.property_id ORDER BY R.rating DESC NULLS LAST;
+;
 
 SELECT 
     U.user_id,
